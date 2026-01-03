@@ -11,6 +11,9 @@
   gtag('config', 'G-81D6829LG0');
 </script>
 
+<link rel="canonical" href="https://andrewjohngilbert.github.io/DEL_ICCV/" />
+
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -30,6 +33,10 @@
     "url": "https://andrewjohngilbert.github.io/DEL_ICCV/",
     "image": "assets/MMKM_Del_Teaser.jpg",
     "description": "We introduce DEL, a framework for dense semantic action localization, aiming to accurately detect and classify multiple actions at fine-grained temporal resolutions in long untrimmed videos. DEL leverages masked self-attention for intra-mode consistency and a multimodal interaction refinement module for cross-modal dependencies. Results on multiple real-world TAL datasets demonstrate more accurate analysis of complex, real-world scenes."
+
+    "keywords": ["Temporal Action Localization", "Audio-Visual", "Multimodal", "Dense Event Localization"],
+"sameAs": [
+  "https://andrewjohngilbert.github.io/DEL_ICCV/assets/MMKM_Del_Paper.pdf"
   }
 </script>
 
@@ -194,7 +201,7 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="assets/MMKM_Del_Teaser.jpg" alt="Research pipeline for comparing human and AI performance">
+      <img src="assets/MMKM_Del_Teaser.jpg" alt="DEL qualitative comparison: GT vs audio-only vs visual-only vs DEL">
       <h2 class="subtitle has-text-centered">
         Real-world videos often feature overlapping events of different lengths, making localization difficult. This image compares ground-truth (GT) with predictions from DEL, an audio-only model (A), and a visual-only model (V). While A and V struggle with a specific category, DEL accurately detects both short and long events, even when overlapping.
       </h2>
@@ -307,11 +314,11 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
 </section>
 <!-- End Main Results-->
 
-<!-- Qualiative results-->
+<!-- Qualitative results-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-<h2 class="title is-3">Qualiative results</h2>
+<h2 class="title is-3">Qualitative results</h2>
 <img src="assets/MMKM_Del_QualResult.jpg" alt="Recognition gap frequency distribution for Easy, Hard, and combined sets">
       <h2 class="subtitle has-text-centered">
          We present qualitative results demonstrating the effectiveness of our DEL framework in comparison to unimodal baselines. For the first example, our model, leveraging audio and visual streams, accurately localizes events such as wind noise, cars passing by, driving a motorcycle, and skidding, even in scenarios with overlapping or short-duration occurrences. In contrast, the audio-only model struggles with visually-driven events like skidding, while the vision-only model fails to detect sound-based events like wind noise. Moreover, relying solely on audio leads to incorrect predictions, such as misclassifying the scene as engine knocking due to the absence of visual context. Similarly, the vision-only model, lacking critical audio cues, misinterprets the scene as auto racing from start to finish, based purely on visual perception. This shows the impact of audio in disambiguating visually similar activities. Distinguishing between "man speaking" and another potential sound source in the third scenario is only possible with audio input, as visual information alone is insufficient. Similarly, in the last example,  the scene is crowded, making it challenging to infer "people cheering" using only visual cues. The vision-only model struggles to recognize this category, while the audio modality provides crucial information for its correct identification. Additionally, detecting "people slapping" relies primarily on visual cues. These results highlight how integrating audio and visual streams leads to more accurate and robust event localization, particularly in complex multimodal scenarios.
@@ -319,7 +326,7 @@ href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css
     </div>
   </div>
 </section>
-<!-- End Qualiative results-->
+<!-- End Qualitative results-->
 
 <!-- Spotlight Presentation -->
 <!--
